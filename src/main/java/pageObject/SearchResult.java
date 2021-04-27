@@ -15,11 +15,11 @@ public class SearchResult extends BasePage {
     @FindBy(xpath = "//*[@class='_1c7YnTu' and text()='Your search results for:']")
     public WebElement resultsPageText;
 
-    @FindBy(xpath = "//*[@aria-label='ASOS DESIGN metal aviator fashion glasses in rose gold with clear lens; Price: £12.00']")
-    public WebElement selectedGlassesProduct;
+    @FindBy(xpath = "//a[@aria-label=\"Tommy Hilfiger leather mini wallet with coin and cardholder pockets with logo in black; Price: £50.00\"]/div[1]/img")
+    public WebElement selectedWalletProduct;
 
-    @FindBy(xpath = "//a[@aria-label='Garmin unisex vivoactive 4S 40mm smart watch in grey 010-02172-02; Price: £239.99']")
-    public WebElement selectedWatchesProduct;
+    @FindBy(xpath = "//p[text()=\"Levi's oversized utility denim jacket in black\"]")
+    public WebElement selectedJacketProduct;
 
     @FindBy(xpath = "//button[@type and text()]")
     public WebElement acceptCookiesButton;
@@ -38,16 +38,16 @@ public class SearchResult extends BasePage {
         super(driver);
     }
 
-    @Step("Click on the first item that was listed")
-    public SearchResult clickOnTheFirstGlassesProduct() {
-        logger.info("Select product from glasses results");
-        clickOnElement(waitToBeClickable(selectedGlassesProduct, driver));
+    @Step("Click on the item that was listed")
+    public SearchResult clickOnTheFirstWalletProduct() {
+        logger.info("Select product from wallet results");
+        clickOnElement(waitToBeClickable(selectedWalletProduct, driver));
         return this;
     }
-    @Step("Click on the first item that was listed")
-    public SearchResult clickOnTheFirstWatchesProduct() {
+    @Step("Click on the item that was listed")
+    public SearchResult clickOnTheFirstJacketProduct() {
         logger.info("Select product from watches results");
-        clickOnElement(waitToBeClickable(selectedWatchesProduct, driver));
+        clickOnElement(waitToBeClickable(selectedJacketProduct, driver));
         return this;
     }
 

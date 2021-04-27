@@ -10,7 +10,7 @@ Feature: Search for product
 
         Examples:
             | ProductName |
-            | shoes       |
+            | hat      |
 
 #    UNHAPPY PATH
     Scenario Outline: Validate searching special sign

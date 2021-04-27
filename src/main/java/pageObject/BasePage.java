@@ -47,7 +47,7 @@ public class BasePage extends Page {
     protected WebElement waitToBeClickable(WebElement element, WebDriver driver) {
         WebElement visibleElement = null;
         try {
-            visibleElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+            visibleElement = new WebDriverWait(driver, Duration.ofSeconds(12))
                     .until(ExpectedConditions.elementToBeClickable(element));
         } catch (Exception e) {
             System.out.println("Element was not loaded!");

@@ -1,7 +1,7 @@
 Feature: Save the product
     As an: User
-    I want: to save specific product
-    So that: I can buy it later
+    I want: to add product to my favourite list
+    So that: I can save it for the future
 
     Scenario Outline: Validate save searched product
         Given The user opens home page
@@ -14,7 +14,7 @@ Feature: Save the product
         Examples:
 
             | ProductName |
-            | glasses       |
+            | wallet       |
 
     Scenario Outline: Validate delete product from saved
         Given The user opens home page
@@ -29,4 +29,4 @@ Feature: Save the product
         Examples:
 
             | ProductName |
-            | watches     |
+            | jacket     |

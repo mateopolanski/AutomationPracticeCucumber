@@ -65,17 +65,17 @@ public class SearchStepsTest {
         logger.info("Verifying text on page");
         pageManager.resultsPage().acceptTheCookies();
         pageManager.resultsPage().acceptCountryCookies();
-        waitToBeVisible(pageManager.resultsPage().selectedGlassesProduct,driver);
-        pageManager.resultsPage().clickOnTheFirstGlassesProduct();
+        waitToBeVisible(pageManager.resultsPage().selectedWalletProduct,driver);
+        pageManager.resultsPage().clickOnTheFirstWalletProduct();
     }
 
     @And("The user go to the first product from watches result page")
-    public void goToTheFirstProductFromWatchesResultPage() {
+    public void goToTheFirstProductFromJacketsResultPage() {
         logger.info("Verifying text on page");
         pageManager.resultsPage().acceptTheCookies();
         pageManager.resultsPage().acceptCountryCookies();
-        waitToBeVisible(pageManager.resultsPage().selectedWatchesProduct,driver);
-        pageManager.resultsPage().clickOnTheFirstWatchesProduct();
+        waitToBeVisible(pageManager.resultsPage().selectedJacketProduct,driver);
+        pageManager.resultsPage().clickOnTheFirstJacketProduct();
     }
 
     @When("The user delete the products from saved")

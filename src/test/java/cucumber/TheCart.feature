@@ -18,4 +18,4 @@ Feature: Cart status
 
         Examples:
             | ProductName |
-            | glasses  |
+            | wallet  |

@@ -62,7 +62,7 @@ public class CartStepsTest {
     }
 
     @Then("The user is redirected to results page")
-    public void ResultsPageGlasses() {
+    public void ResultsPageWallet() {
         logger.info("Verifying text on page");
         Assert.assertTrue(waitToBeVisible(pageManager.resultsPage().resultsPageText, driver).isDisplayed());
     }
@@ -71,8 +71,8 @@ public class CartStepsTest {
     public void addFirstItemToTheCart() throws InterruptedException {
         pageManager.resultsPage().acceptTheCookies();
         pageManager.resultsPage().acceptCountryCookies();
-        waitToBeVisible(pageManager.resultsPage().selectedGlassesProduct,driver);
-        pageManager.resultsPage().clickOnTheFirstGlassesProduct();
+        waitToBeVisible(pageManager.resultsPage().selectedWalletProduct,driver);
+        pageManager.resultsPage().clickOnTheFirstWalletProduct();
         waitToBeVisible(pageManager.productPage().addToCart,driver);
         pageManager.productPage().addItemToCart();
     }
