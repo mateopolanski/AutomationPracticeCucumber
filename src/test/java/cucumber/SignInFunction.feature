@@ -1,5 +1,5 @@
 Feature: Sign In to User's account
-    As a: User
+    As an: User
     I want: to sign in to my account
     So that: I can use the page as a logged user
 
