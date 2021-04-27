@@ -1,5 +1,5 @@
 Feature: Search for product
-    As a: User
+    As an: User
     I want: to search specific product
     So that: I can select from results
 

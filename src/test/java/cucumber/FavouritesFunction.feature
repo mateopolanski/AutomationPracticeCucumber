@@ -1,5 +1,5 @@
 Feature: Save the product
-    As a: User
+    As an: User
     I want: to save specific product
     So that: I can buy it later
 
